@@ -11,6 +11,6 @@ class IndexController extends AbstractController
     #[Route('/', name: 'app_index')]
     public function index(): Response
     {
-        return new Response('hello world. i cant get rollback to work');
+        return new Response('<html><head></head><body>hello world. its snowing!</body></html>');
     }
 }
