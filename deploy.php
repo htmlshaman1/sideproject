@@ -7,7 +7,7 @@ namespace Deployer;
 require 'recipe/symfony.php';
 
 // Config
-
+set('use_relative_symlink', true);
 set('repository', 'git@github.com:htmlshaman1/sideproject.git');
 host('percent-increase.com')
     ->set('remote_user', 'zerocool')
@@ -37,12 +37,10 @@ set('shared_files', ['.env.local']);
 
 
 set('git_tty', false);
-set('use_relative_symlink', false);
+
 // Hosts
 
-host('redacted')
-    ->set('remote_user', 'app')
-    ->set('deploy_path', 'redacted');
+
 
 // Hooks
 
