@@ -11,6 +11,6 @@ class IndexController extends AbstractController
     #[Route('/', name: 'app_index')]
     public function index(): Response
     {
-        return new Response('hello world. Elvis has left the building!');
+        return new Response('hello world. it was Nick FUUUUCKKKING! CAGE');
     }
 }
