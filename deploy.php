@@ -32,6 +32,8 @@ set('writable_dirs', [
     'public/media',
 ]);
 
+set('shared_files', ['.env.local']);
+
 
 
 set('git_tty', false);
